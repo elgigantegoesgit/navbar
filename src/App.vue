@@ -1,8 +1,8 @@
 <template>
-  <div class="navbar">
     <div class="logo">
       <img src="./assets/logo.png" style="width: 80px" />
     </div>
+  <div class="navbar">
 
     <div class="nav_buttons">
       <div class="btn" @click="$emit('show1')">Table</div>
