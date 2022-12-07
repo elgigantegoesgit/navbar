@@ -13,10 +13,6 @@
       <div class="btn" @click="$emit('show2')">yyyyyyyy</div>
       <div class="btn" @click="mymeth('ZZZ')">zz</div>
 
-      <div class="btn" @click="$emit('show1')">aaaaa</div>
-      <div class="btn" @click="$emit('show2')">bbbb</div>
-      <div class="btn" @click="$emit('showlist')">ccccc</div>
-
       <div class="btn" @click="$emit('show1')">111</div>
       <div class="btn" @click="$emit('show2')">2222</div>
       <div class="btn" @click="$emit('showlist')">3333</div>
@@ -46,7 +42,7 @@
 import Table from "./components/table.vue";
 import myInput from "./components/input.vue";
 import mydata from "./assets/data.json";
-import "./style.css";
+// import "./style.css";
 
 export default {
   name: "App",
@@ -87,6 +83,67 @@ export default {
 </script>
 
 <style>
+html {
+  font-family: verdana;
+}
+
+body {
+  background-color: #d3f6ee;
+}
+
+.header {
+  left: 0; /* top left corner should start at leftmost spot */
+  top: 0; /* top left corner should start at topmost spot */
+  height: 100px; /* define height for content */
+}
+
+.logo {
+  background: aquamarine;
+  padding: 15px 15px;
+  border-radius: 25px;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 200;
+  display: flex;
+
+  left: 0; /* top left corner should start at leftmost spot */
+  top: 0; /* top left corner should start at topmost spot */
+  /* height: 60px; */
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid darkblue;
+  background: lightblue;
+}
+
+.nav_button_container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100vw;
+  background: lightblue;
+}
+
+.btn {
+  background: black;
+  padding: 2% 2%;
+  margin: 1% 1%;
+  color: lightblue;
+  cursor: pointer;
+  border-radius: 5vw;
+}
+
+.btn:hover {
+  background: darkblue;
+  box-shadow: 0 0 5px 1px darkblue;
+}
+
+.btn:active {
+  background: blue;
+  box-shadow: 0 0 5px 1px blue;
+}
+
 .content {
   background: linear-gradient(45deg, #233329, #63d471);
   background-attachment: fixed;
