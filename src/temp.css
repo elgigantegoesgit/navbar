@@ -1,0 +1,93 @@
+html {
+  font-family: verdana;
+}
+
+body {
+  background-color: #d3f6ee;
+}
+
+table,
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+  border-collapse: collapse;
+  background-color: #b9f5e7;
+}
+
+/*tr:nth-child(even) {
+background: lightblue;
+}*/
+
+.tblstyle {
+  width: 90vw;
+  border: 2px solid;
+  margin: auto;
+  table-layout: fixed;
+}
+
+.tblrowhighlighted {
+  color: blue;
+  text-shadow: 5px 5px 25px darkblue;
+}
+.tbl2nd {
+  font-size: 1.6em;
+}
+
+.logo {
+  background: aquamarine;
+  padding: 15px 15px;
+  border-radius: 25px;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 200;
+  display: flex;
+
+  left: 0; /* top left corner should start at leftmost spot */
+  top: 0; /* top left corner should start at topmost spot */
+  /* height: 60px; */
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid darkblue;
+  background: lightblue;
+}
+
+.header {
+  left: 0; /* top left corner should start at leftmost spot */
+  top: 0; /* top left corner should start at topmost spot */
+
+  height: 100px; /* define height for content */
+}
+
+.navbar .nav_buttons {
+  display: flex;
+}
+
+.navbar .nav_buttons .btn {
+  background: black;
+  padding: 10px 20px;
+  margin: 0 10px;
+  color: lightblue;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid darkblue;
+  background-color: #b9f5e7;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  border: 1px solid darkblue;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 20px;
+  font-size: 10px;
+}
