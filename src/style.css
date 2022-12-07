@@ -33,12 +33,14 @@ body {
   background: lightblue;
 }
 
-.nav_buttons {
+.nav_button_container {
   display: flex;
   flex-flow: row wrap;
+  width: 100vw;
+  background: lightblue;
 }
 
-.nav_buttons .btn {
+.btn {
   background: black;
   padding: 2% 2%;
   margin: 1% 1%;
@@ -47,48 +49,12 @@ body {
   border-radius: 5vw;
 }
 
-/*
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  border: 1px solid darkblue;
-  background-color: #b9f5e7;
+.btn:hover {
+  background: darkblue;
+  box-shadow: 0 0 5px 1px darkblue;
 }
 
-.flex-container > div {
-  background-color: #f1f1f1;
-  border: 1px solid darkblue;
-  border-radius: 15px;
-  margin: 10px;
-  padding: 20px;
-  font-size: 10px;
-}
-*/
-table,
-th,
-td {
-  padding: 10px;
-  text-align: center;
-  border: 1px solid black;
-  border-collapse: collapse;
-  background-color: #b9f5e7;
-}
-
-/*tr:nth-child(even) {
-background: lightblue;
-}*/
-
-.tblstyle {
-  width: 90vw;
-  border: 2px solid;
-  margin: auto;
-  table-layout: fixed;
-}
-
-.tblrowhighlighted {
-  color: blue;
-  text-shadow: 5px 5px 25px darkblue;
-}
-.tbl2nd {
-  font-size: 1.6em;
+.btn:active {
+  background: blue;
+  box-shadow: 0 0 5px 1px blue;
 }

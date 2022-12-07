@@ -1,10 +1,10 @@
 <template>
+  <div class="navbar">
     <div class="logo">
       <img src="./assets/logo.png" style="width: 80px" />
     </div>
-  <div class="navbar">
 
-    <div class="nav_buttons">
+    <div class="nav_button_container">
       <div class="btn" @click="$emit('show1')">Table</div>
       <div class="btn" @click="$emit('show2')">Flex</div>
       <div class="btn" @click="$emit('showlist')">Sort</div>
@@ -89,14 +89,15 @@ export default {
 <style>
 .content {
   background: linear-gradient(45deg, #233329, #63d471);
+  background-attachment: fixed;
   margin-top: 200px;
+  height: 100vh;
 }
 
 .modal {
   display: none; /* Hidden by default */
-  //display: block; /* shown by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 999; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;

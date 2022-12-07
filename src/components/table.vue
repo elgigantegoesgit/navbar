@@ -135,18 +135,23 @@ export default {
 table {
   margin-left: auto;
   margin-right: auto;
+  background-color: #a0e4d4;
+  box-shadow: 0 0 5px 5px #43d8b5;
 }
+
 table,
 th,
 td {
-  border: solid 2px;
-  border-color: rgb(13, 124, 109);
+  border: 2px solid rgb(13, 124, 109);
   border-collapse: collapse;
-}
-tr:nth-child(even) {
-  background-color: #cff1f7;
+  padding: 10px;
+  text-align: center;
 }
 th {
-  background-color: #bce9f1;
+  background-color: #43d8b5;
+}
+
+tr:nth-child(even) {
+  background-color: #81e9e0;
 }
 </style>
