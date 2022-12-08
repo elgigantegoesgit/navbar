@@ -1,25 +1,8 @@
 <template>
-  <div class="navbar">
-    <div class="logo">
-      <img src="./assets/logo.png" style="width: 80px" />
-    </div>
+  <mynavbar @newnavbarheight="newnavbarheight" />
 
-    <div class="nav_button_container">
-      <div class="btn" @click="$emit('show1')">Table</div>
-      <div class="btn" @click="$emit('show2')">Flex</div>
-      <div class="btn" @click="$emit('showlist')">Sort</div>
-
-      <div class="btn" @click="$emit('show1')">xxxxx</div>
-      <div class="btn" @click="$emit('show2')">yyyyyyyy</div>
-      <div class="btn" @click="mymeth('ZZZ')">zz</div>
-
-      <div class="btn" @click="$emit('show1')">111</div>
-      <div class="btn" @click="$emit('show2')">2222</div>
-      <div class="btn" @click="$emit('showlist')">3333</div>
-    </div>
-  </div>
-  <div class="content">
-    <button @click="mypopup">Open Popup...</button>
+  <div ref="contentref" class="content">
+    <button @click="mypopup" style="margin-top: 1em">Open Popup...</button>
     <!-- embed  type="text/plain" src="./assets/text.txt" /      geht nicht -->
     <p>Filter val in App.vue: {{ myFilVal }}</p>
     <Table
@@ -39,6 +22,7 @@
 </template>
 
 <script>
+import mynavbar from "./components/navbar.vue";
 import Table from "./components/table.vue";
 import myInput from "./components/input.vue";
 import mydata from "./assets/data.json";
@@ -49,11 +33,19 @@ export default {
   components: {
     Table,
     myInput,
+    mynavbar,
   },
   methods: {
     mymeth() {
       alert("xxx mymeth() called.");
     },
+
+    // called by emit from navbar, if navbar height changes due to resizing, set margin-top of content to new offset acc. to navbar height
+    newnavbarheight(newnavbarheight_) {
+      // console.log("changed: " + this.$refs.contentref.clientWidth  ); // works. all props see https://developer.mozilla.org/en-US/docs/Web/API/Element/clientHeight or better(?) https://www.w3schools.com/jsref/dom_obj_style.asp
+      this.$refs.contentref.style.marginTop = newnavbarheight_ + "px";
+    },
+
     setfilter(fil_) {
       console.log("filterxxx" + fil_);
       this.myFilVal = Number(fil_);

@@ -6,44 +6,23 @@ body {
   background-color: #d3f6ee;
 }
 
-.header {
-  left: 0; /* top left corner should start at leftmost spot */
-  top: 0; /* top left corner should start at topmost spot */
-  height: 100px; /* define height for content */
-}
-
 .logo {
   background: aquamarine;
   padding: 15px 15px;
   border-radius: 25px;
 }
 
-.navbar {
-  position: fixed;
-  z-index: 200;
-  display: flex;
-
-  left: 0; /* top left corner should start at leftmost spot */
-  top: 0; /* top left corner should start at topmost spot */
-  /* height: 60px; */
-  width: 100vw;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid darkblue;
-  background: lightblue;
-}
-
-.nav_button_container {
-  display: flex;
-  flex-flow: row wrap;
-  width: 100vw;
-  background: lightblue;
+.content {
+  background: linear-gradient(45deg, #233329, #63d471);
+  background-attachment: fixed;
+  margin-top: 200px;
+  height: 100vh;
 }
 
 .btn {
   background: black;
-  padding: 2% 2%;
-  margin: 1% 1%;
+  padding: 2vh 2vw;
+  margin: 1vh 1vw;
   color: lightblue;
   cursor: pointer;
   border-radius: 5vw;
@@ -57,13 +36,6 @@ body {
 .btn:active {
   background: blue;
   box-shadow: 0 0 5px 1px blue;
-}
-
-.content {
-  background: linear-gradient(45deg, #233329, #63d471);
-  background-attachment: fixed;
-  margin-top: 200px;
-  height: 100vh;
 }
 
 .modal {

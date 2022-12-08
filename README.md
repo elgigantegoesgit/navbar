@@ -1,6 +1,8 @@
-# t
+# vue 3 navbar
 
-# simple table template, tests with environment variable process.env.NODE_ENV, json file as array-of-objects-import, input field with watcher, simple filter, simple modal popup window, navbar added
+# this t up there is important, if deleted, commit from codesandbox not possible ("Error: t undefined")
+
+# simple table template, tests with environment variable process.env.NODE_ENV, json file as array-of-objects-import, input field with watcher, simple filter, simple modal popup window, navbar, content marginTop adaptive to navbar height
 
 # Install: If error "invalid hoster" occurs, create vue.config.js file in root directory (where also package.json is), with this content:
 

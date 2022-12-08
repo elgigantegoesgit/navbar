@@ -111,6 +111,11 @@ export default {
       }
     },
   },
+
+  updated() {
+    console.log(Date.now() + "Table updated...");
+  },
+
   mounted() {
     console.log("process.env.NODE_ENV set to: '" + process.env.NODE_ENV + "'");
     this.studentDatalcl = [...this.studentData];
