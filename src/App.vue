@@ -42,7 +42,7 @@
 import Table from "./components/table.vue";
 import myInput from "./components/input.vue";
 import mydata from "./assets/data.json";
-// import "./style.css";
+import "./App.css";
 
 export default {
   name: "App",
@@ -83,110 +83,4 @@ export default {
 </script>
 
 <style>
-html {
-  font-family: verdana;
-}
-
-body {
-  background-color: #d3f6ee;
-}
-
-.header {
-  left: 0; /* top left corner should start at leftmost spot */
-  top: 0; /* top left corner should start at topmost spot */
-  height: 100px; /* define height for content */
-}
-
-.logo {
-  background: aquamarine;
-  padding: 15px 15px;
-  border-radius: 25px;
-}
-
-.navbar {
-  position: fixed;
-  z-index: 200;
-  display: flex;
-
-  left: 0; /* top left corner should start at leftmost spot */
-  top: 0; /* top left corner should start at topmost spot */
-  /* height: 60px; */
-  width: 100vw;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid darkblue;
-  background: lightblue;
-}
-
-.nav_button_container {
-  display: flex;
-  flex-flow: row wrap;
-  width: 100vw;
-  background: lightblue;
-}
-
-.btn {
-  background: black;
-  padding: 2% 2%;
-  margin: 1% 1%;
-  color: lightblue;
-  cursor: pointer;
-  border-radius: 5vw;
-}
-
-.btn:hover {
-  background: darkblue;
-  box-shadow: 0 0 5px 1px darkblue;
-}
-
-.btn:active {
-  background: blue;
-  box-shadow: 0 0 5px 1px blue;
-}
-
-.content {
-  background: linear-gradient(45deg, #233329, #63d471);
-  background-attachment: fixed;
-  margin-top: 200px;
-  height: 100vh;
-}
-
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 999; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  box-shadow: 0px 0px 10px 10px cyan;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
 </style>
