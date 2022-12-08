@@ -1,5 +1,5 @@
 <template>
-  <div id="navbarid" class="navbar" ref="navbarref">
+  <div ref="navbarref" class="navbar">
     <div class="logo">
       <img src="../assets/logo.png" style="width: 80px" />
     </div>
@@ -33,13 +33,9 @@ export default {
   mounted() {
     // Observe navbar height to adapt content y position accordingly
     const resizeObserver = new ResizeObserver(() => {
-      // console.log(        "Size changed W x H:",        document.getElementById("navbarid").clientWidth,        document.getElementById("navbarid").clientHeight      );
-      this.$emit(
-        "newnavbarheight",
-        document.getElementById("navbarid").clientHeight
-      );
+      this.$emit("newnavbarheight", this.$refs.navbarref.clientHeight);
     });
-    resizeObserver.observe(document.getElementById("navbarid"));
+    resizeObserver.observe(this.$refs.navbarref);
   },
 };
 </script>

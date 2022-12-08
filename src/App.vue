@@ -44,6 +44,9 @@ export default {
     newnavbarheight(newnavbarheight_) {
       // console.log("changed: " + this.$refs.contentref.clientWidth  ); // works. all props see https://developer.mozilla.org/en-US/docs/Web/API/Element/clientHeight or better(?) https://www.w3schools.com/jsref/dom_obj_style.asp
       this.$refs.contentref.style.marginTop = newnavbarheight_ + "px";
+      console.log(
+        "changed content marginTop to: " + this.$refs.contentref.style.marginTop
+      );
     },
 
     setfilter(fil_) {
