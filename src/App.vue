@@ -36,9 +36,7 @@ export default {
     mynavbar,
   },
   methods: {
-    mymeth() {
-      alert("xxx mymeth() called.");
-    },
+
 
     // called by emit from navbar, if navbar height changes due to resizing, set margin-top of content to new offset acc. to navbar height
     newnavbarheight(newnavbarheight_) {

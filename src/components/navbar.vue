@@ -29,7 +29,11 @@ export default {
       myVal: "xx now news xx",
     };
   },
-  methods: {},
+  methods: {
+    mymeth() {
+      alert("xxx mymeth() called.");
+    },
+  },
   mounted() {
     // Observe navbar height to adapt content y position accordingly
     const resizeObserver = new ResizeObserver(() => {
